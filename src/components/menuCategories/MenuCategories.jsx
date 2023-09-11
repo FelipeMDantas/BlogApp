@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./menuCategories.module.css";
 
 const MenuCategories = () => {
   return (
