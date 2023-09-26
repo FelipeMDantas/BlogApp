@@ -57,7 +57,7 @@ const WritePage = () => {
       );
     };
 
-    file && upload;
+    file && upload();
   }, [file]);
 
   if (status === "loading") {
@@ -68,7 +68,7 @@ const WritePage = () => {
     router.push("/");
   }
 
-  const slugify = (str) => {
+  const slugify = (str) =>
     str
       .toLowerCase()
       .trim()
@@ -76,17 +76,17 @@ const WritePage = () => {
       .replace(/[\s_-]/g, "-")
       .replace(/-+|-+$/g, "");
 
-    const handleSubmit = async () => {
-      const res = await fetch("/api/posts", {
-        method: "POST",
-        body: JSON.stringify({
-          title,
-          desc: value,
-          img: media,
-          slug: slugify(title),
-        }),
-      });
-    };
+  const handleSubmit = async () => {
+    const res = await fetch("/api/posts", {
+      method: "POST",
+      body: JSON.stringify({
+        title,
+        desc: value,
+        img: media,
+        slug: slugify(title),
+        catSlug: "travel",
+      }),
+    });
   };
 
   return (
