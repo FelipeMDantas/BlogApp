@@ -20,12 +20,18 @@ A couple of technologies were employed in this project. Among them:
 - [NPM] - a package manager
 - [Firebase] - Google's Backend as a Service
 - [MongoDB] - a NoSQL source-available cross-platform document-oriented database program
-- [Dotenv] - a module that loads environment variables from a .env file into process.env.
+- [Prisma] - an ORM for Node.js and TypeScript
+- [ReactQuill] - a Quill component for React
+- [SWR] - provides React Hooks for Data Fetching
+- [Dotenv] - a module that loads environment variables from a .env file into process.env
 - [Prettier] - a code formatter
 
   [reactjs]: https://reactjs.org/
   [npm]: https://www.npmjs.com/
   [firebase]: https://firebase.google.com/
   [mongodb]: https://www.mongodb.com/
+  [prisma]: https://www.prisma.io/
+  [reactquill]: https://github.com/zenoamaro/react-quill
+  [swr]: https://swr.vercel.app/
   [dotenv]: https://dotenv.org/
   [prettier]: https://prettier.io/
